@@ -1,18 +1,18 @@
 package com.example.SistemaInventario.service;
 
-import com.example.SistemaInventario.entity.Rol;
-import com.example.SistemaInventario.repository.RolRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.example.SistemaInventario.entity.Rol;
+import com.example.SistemaInventario.repository.RolRepository;
 
 @Service
 public class RolService {
 
-    @Autowired
-    private RolRepository repository;
+    private final RolRepository repository = null;
+
 
     public List<Rol> listarTodos() {
         return repository.findAll();

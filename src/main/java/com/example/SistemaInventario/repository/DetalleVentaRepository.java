@@ -1,9 +1,8 @@
 package com.example.SistemaInventario.repository;
 
-import com.example.SistemaInventario.entity.DetalleVenta;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
-@Repository
+import com.example.SistemaInventario.entity.DetalleVenta;
+
 public interface DetalleVentaRepository extends JpaRepository<DetalleVenta, Long> {
 }

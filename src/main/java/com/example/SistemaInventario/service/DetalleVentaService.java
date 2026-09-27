@@ -1,18 +1,18 @@
 package com.example.SistemaInventario.service;
 
-import com.example.SistemaInventario.entity.DetalleVenta;
-import com.example.SistemaInventario.repository.DetalleVentaRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.example.SistemaInventario.entity.DetalleVenta;
+import com.example.SistemaInventario.repository.DetalleVentaRepository;
 
 @Service
 public class DetalleVentaService {
 
-    @Autowired
-    private DetalleVentaRepository repository;
+    private final DetalleVentaRepository repository = null;
+
 
     public List<DetalleVenta> listarTodos() {
         return repository.findAll();
